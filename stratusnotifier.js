@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Item Notifier
-// @include      http://www.doblox.xyz/
-// @namespace    http://www.doblox.xyz/
-// @version      1.5
+// @include      https://www.strrev.com/
+// @namespace    https://www.strrev.com/
+// @version      0.1
 // @description  Notifies user when new items are available.
 // @author       eternal45
-// @match        *://www.doblox.xyz/*
-// @icon         https://www.doblox.xyz/img/logo_R.svg
+// @match        *://www.strrev.com/*
+// @icon         https://www.strrev.com/uploads/badges/67f1635745edc_stratus%20S%20logo.png
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/eternal-45/doblox-notif/main/dobloxnotifier.js
 // @downloadURL  https://raw.githubusercontent.com/eternal-45/doblox-notif/main/dobloxnotifier.js
