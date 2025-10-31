@@ -8,8 +8,8 @@
 // @match        *://www.strrev.com/*
 // @icon         https://www.strrev.com/uploads/badges/67f1635745edc_stratus%20S%20logo.png
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/eternal-45/doblox-notif/main/dobloxnotifier.js
-// @downloadURL  https://raw.githubusercontent.com/eternal-45/doblox-notif/main/dobloxnotifier.js
+// @updateURL    https://raw.githubusercontent.com/eternal-45/stratus-notif/refs/heads/main/stratusnotifier.js
+// @downloadURL  https://raw.githubusercontent.com/eternal-45/stratus-notif/refs/heads/main/stratusnotifier.js
 // ==/UserScript==
 
 (function() {
@@ -123,7 +123,7 @@
         });
 
         notification.onclick = () => {
-            window.open(`https://www.doblox.xyz/catalog/${itemId}/Notify`);
+            window.open(`https://www.strrev.com/item?id=${itemId}/Notify`);
         };
     }
 
