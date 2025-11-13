@@ -3,21 +3,21 @@
 // @include      https://www.strrev.com/
 // @namespace    https://www.strrev.com/
 // @version      0.1
-// @description  Notifies user when new items are available.
+// @decsription  Notifies user when new items are available.
 // @author       eternal45
-// @match        *://www.strrev.com/*
-// @icon         https://www.strrev.com/uploads/badges/67f1635745edc_stratus%20S%20logo.png
+// @match        *://www.ecsr.io/*
+// @icon         https://ecsr.io/img/logo_R.svg
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/eternal-45/stratus-notif/refs/heads/main/stratusnotifier.js
-// @downloadURL  https://raw.githubusercontent.com/eternal-45/stratus-notif/refs/heads/main/stratusnotifier.js
+// @updateURL    https://raw.githubusercontent.com/eternal-45/ecsr-notif/refs/heads/main/ecsnotifier.js
+// @downloadURL  https://raw.githubusercontent.com/eternal-45/ecsr-notif/refs/heads/main/ecsnotifier.js
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    const categoryApiUrl = 'https://www.doblox.xyz/apisite/catalog/v1/search/items?category=Featured&limit=28&sortType=0';
-    const itemDetailsApiUrl = 'https://www.doblox.xyz/apisite/catalog/v1/catalog/items/details';
-    const thumbnailApiUrl = 'https://www.doblox.xyz/apisite/thumbnails/v1/assets';
+    const categoryApiUrl = 'https://www.ecsr.io/apisite/catalog/v1/search/items?category=Featured&limit=28&sortType=0';
+    const itemDetailsApiUrl = 'https://www.ecsr.io/apisite/catalog/v1/catalog/items/details';
+    const thumbnailApiUrl = 'https://www.ecsr.io/apisite/thumbnails/v1/assets';
 
     function getLastSeenItemId() {
         return localStorage.getItem('lastSeenItemId');
@@ -106,7 +106,7 @@
             if (!thumbnailResponse.ok) throw new Error('Network response was not ok');
 
             const thumbnailData = await thumbnailResponse.json();
-            const itemImage = thumbnailData.data && thumbnailData.data.length > 0 ? `https://www.doblox.xyz${thumbnailData.data[0].imageUrl}` : '';
+            const itemImage = thumbnailData.data && thumbnailData.data.length > 0 ? `https://www.ecsr.io${thumbnailData.data[0].imageUrl}` : '';
 
             return { itemName, itemImage, isLimitedUnique, itemPrice };
         } catch (error) {
@@ -123,7 +123,7 @@
         });
 
         notification.onclick = () => {
-            window.open(`https://www.strrev.com/item?id=${itemId}/Notify`);
+            window.open(`https://www.ecsr.io/catalog/${itemId}/Notify`);
         };
     }
 
