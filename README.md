@@ -1,2 +1,2 @@
-# stratus-notif
+# ecsr-notif
 wip
