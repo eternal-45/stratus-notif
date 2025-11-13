@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ECS:R Notifier
-// @include      https://www.strrev.com/
-// @namespace    https://www.strrev.com/
+// @include      https://www.ecsr.io/
+// @namespace    https://www.ecsr.io/
 // @version      0.1
 // @decsription  Notifies user when new items are available.
 // @author       eternal45
