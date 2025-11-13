@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Item Notifier
+// @name         ECSR Notifier
 // @include      https://www.strrev.com/
 // @namespace    https://www.strrev.com/
 // @version      0.1
